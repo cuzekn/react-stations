@@ -8,6 +8,7 @@ import './App.css'
  * @type {React.FC}
  */
 export const App = () => {
+  this.state = {dogUrl};
   return (
     <header>
       Dog Photo
