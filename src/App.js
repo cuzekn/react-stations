@@ -15,6 +15,7 @@ export const App = () => {
       Dog Photo
       <p>犬の画像を表示するサイトです。</p>
       <img src={dogUrl} />
+      <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/corgi-cardigan/n02113186_11073.jpg")}>更新</button>
     </header>
   )
 }
