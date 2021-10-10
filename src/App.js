@@ -1,6 +1,6 @@
 // DO NOT DELETE
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import * as react from 'react'
 import './App.css'
 
@@ -10,6 +10,11 @@ import './App.css'
  */
 export const App = () => {
   const [dogUrl, setDogUrl] = useState("https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_3534.jpg");
+  fetch("https://dog.ceo/api/breeds/image/random")
+    .then(res => res.json())
+    .then((result) => {
+      this.useState()
+    })
   return (
     <header>
       Dog Photo
@@ -19,3 +24,6 @@ export const App = () => {
     </header>
   )
 }
+
+// https://dog.ceo/api/breeds/image/random
+// {"message":"https://images.dog.ceo/breeds/mastiff-tibetan/n02108551_2861.jpg","status":"success"}
