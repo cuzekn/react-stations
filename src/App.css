@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 95px;
+  width: 1440px;
+}
+header h1{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 54px;
+  text-align: center;
+}
+
+main {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  margin: 0 20px;
+  display: flex;
+}
+
+main p {
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+  line-height: 28px;
+}
+
+.description {
+  width: 858px;
+  height: 377px;
+  top: 104px;
+  left: 20px;
+}
+
+main img {
+  /* width: 443px; */
+  height: 268px;
+  right: 92px;
+  top: 152px;
+}
+
+.image {
+  width: 443px;
+}
+
+button {
+  background-color: rgb(21, 101, 250);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  margin: 8px 15px;
+}

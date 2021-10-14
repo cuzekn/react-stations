@@ -9,9 +9,9 @@ import './App.css'
  * @type {React.FC}
  */
 export const App = () => {
-  const [dogUrl, setDogUrl] = useState('https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_3534.jpg',)
+  const [dogUrl, setDogUrl] = useState('https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_3534.jpg');
 
-  const handleClick = () => {
+  const ImageUpdata = () => {
   fetch('https://dog.ceo/api/breeds/image/random')
     .then(res => res.json())
     .then(result => {
@@ -21,15 +21,22 @@ export const App = () => {
     .catch(error => {console.log(error)})
   }
   return (
+  <>
     <header>
-      Dog Photo
-      <p>犬の画像を表示するサイトです。</p>
-      <img src={dogUrl} />
-      {/* <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/corgi-cardigan/n02113186_11073.jpg")}>更新</button> */}
-      <button onClick={handleClick}>更新</button>
+      <h1>Dog Photo</h1>
     </header>
+    <main>
+      <div className="description">
+        <p>犬の画像を表示するサイトです。</p>
+      </div>
+    <div className="image">
+    <img src={dogUrl} />
+    {/* <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/corgi-cardigan/n02113186_11073.jpg")}>更新</button> */}
+    <button onClick={ImageUpdata}>更新</button>
+    </div>
+    </main>
+  </>
   )
 }
-
 // https://dog.ceo/api/breeds/image/random
 // {"message":"https://images.dog.ceo/breeds/mastiff-tibetan/n02108551_2861.jpg","status":"success"}
