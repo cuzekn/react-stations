@@ -1,7 +1,6 @@
 // DO NOT DELETE
 
-import React, { useState } from 'react'
-import * as react from 'react'
+import React from 'react'
 import { Header } from './Header'
 import { Description } from './Description'
 
