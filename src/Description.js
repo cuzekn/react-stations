@@ -28,7 +28,7 @@ export const Description = (props) => {
         </div>
           <div className="photo">
             <div className="image">
-            <img src={dogUrl} alt={'犬の画像です'} />
+            <DogImage url={dogUrl} alt={'犬の画像です'} />
             </div>
             <div className="btn">
             <button onClick={updateImage}>更新</button>
