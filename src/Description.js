@@ -4,6 +4,7 @@ import  React, { useState }  from 'react'
 import { DogImage } from './DogImage'
 import './App.css'
 
+
 export const Description = (props) => {
   const [dogUrl, setDogUrl] = useState(
       'https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_3534.jpg'
