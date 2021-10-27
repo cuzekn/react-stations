@@ -4,8 +4,8 @@ import React from 'react'
 export const BreedsSelect = (props) => {
   const breeds = props.breeds;
 
-  const listItems = breeds.map((value) =>
-  <option key={value} value={value} text={value}>{value}</option>
+  const listItems = breeds.map((breed) =>
+  <option key={breed} value={breed} text={breed}>{breed}</option>
   )
 
   return (
