@@ -2,6 +2,7 @@
 
 import  React, { useState }  from 'react'
 import { DogImage } from './DogImage'
+import { BreedsSelect } from './BreedsSelect'
 import './App.css'
 
 
@@ -35,6 +36,8 @@ export const Description = (props) => {
             <button onClick={updateImage}>更新</button>
             </div>
           </div>
+        </div>
+        <div className="list">
         </div>
       </main>
   );
