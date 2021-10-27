@@ -13,6 +13,7 @@ export const BreedsSelect = (props) => {
     <select breeds={props.breeds} onChange={props.change}>
       {listItems}
     </select>
+    {props.selectedBreed}
     </>
   );
 };
