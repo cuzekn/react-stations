@@ -17,9 +17,6 @@ export const DogListContainer = () => {
     );
   },[]);
 
-  // const listImafes = images.map((image) =>
-  //   <img key={image} src={image} />
-  // )
   return (
     <>
       <BreedsSelect
@@ -27,7 +24,6 @@ export const DogListContainer = () => {
         value={selectedBreed}
         change={handleChange}
       />
-      
     </>
   );
 };
