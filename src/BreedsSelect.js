@@ -2,15 +2,15 @@
 import React from 'react'
 
 export const BreedsSelect = (props) => {
-  const values = props.values;
+  const breeds = props.breeds;
 
-  const listItems = values.map((value) =>
+  const listItems = breeds.map((value) =>
   <option key={value} value={value} text={value}>{value}</option>
   )
 
   return (
     <>
-    <select value={props.breeds} onChange={props.change}>
+    <select breeds={props.breeds} onChange={props.change}>
       {listItems}
     </select>
     </>
