@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react'
 import { BreedsSelect } from './BreedsSelect'
 
 export const DogListContainer = () => {
-  const [breeds, setBreeds] = useState([])
-  const [selectedBreed, setSelectedBreed] = useState('')
+  const [breeds, setBreeds] = useState([]);
+  const [selectedBreed, setSelectedBreed] = useState('');
 
   const handleChange = (e) => setSelectedBreed(e.target.value)
 
@@ -21,7 +21,7 @@ export const DogListContainer = () => {
     <>
       <BreedsSelect
         breeds={breeds}
-        value={selectedBreed}
+        breed={selectedBreed}
         change={handleChange}
       />
     </>
