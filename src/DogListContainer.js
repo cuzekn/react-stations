@@ -22,7 +22,7 @@ export const DogListContainer = () => {
       <BreedsSelect
         breeds={breeds}
         value={selectedBreed}
-        onchange={handleChange}
+        onChange={handleChange}
       />
     </>
   );
