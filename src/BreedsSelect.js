@@ -10,7 +10,7 @@ export const BreedsSelect = (props) => {
 
   return (
     <>
-    <select value={props.value} onChange={props.change}>
+    <select value={props.breeds} onChange={props.change}>
       {listItems}
     </select>
     </>

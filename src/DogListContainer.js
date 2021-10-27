@@ -5,7 +5,7 @@ import { BreedsSelect } from './BreedsSelect'
 
 export const DogListContainer = () => {
   const [breeds, setBreeds] = useState([])
-  const [selectedBreed, setSelectctedBred] = useState(`https://dog.ceo/api/${breeds}/list/all`)
+  const [selectedBreed, setSelectedBreed] = useState(`https://dog.ceo/api/${breeds}/list/all`)
 
   const handleChange = (e) => setSelectedBreed(e.target.value)
 
