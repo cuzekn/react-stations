@@ -21,7 +21,7 @@ export const DogListContainer = () => {
     <>
       <BreedsSelect
         breeds={breeds}
-        breed={selectedBreed}
+        value={selectedBreed}
         change={handleChange}
       />
     </>
