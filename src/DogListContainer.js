@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { BreedsSelect } from './BreedsSelect'
 
-export const DogListContainer = () => {
+export const DogListContainer = (props) => {
   const [breeds, setBreeds] = useState([]);
   const [selectedBreed, setSelectedBreed] = useState('');
 
@@ -16,6 +16,7 @@ export const DogListContainer = () => {
       setBreeds(Object.keys(breeds.message)))
     );
   },[]);
+  console.log(selectedBreed);
 
   return (
     <>
